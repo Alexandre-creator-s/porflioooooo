@@ -1,0 +1,615 @@
+/* Style global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    color: #333;
+}
+
+/* Menu latéral */
+.sidebar {
+    width: 20%;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .profile h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.sidebar .profile p {
+    margin: 5px 0 20px;
+    font-size: 14px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.menu a:hover {
+    background-color: #34495e;
+}
+
+/* Lien de menu actif */
+.menu a.active {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #ecf0f1;
+}
+
+/* Contenu principal */
+.content {
+    flex: 1;
+    padding: 20px;
+    background: #ecf0f1;
+    overflow-y: auto;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.current-time {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.2em;
+    color: #0078D7;
+}
+
+#time-display {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #0078D7; 
+}
+#date-display {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Section spécifique */
+.welcome {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Section Profil */
+#profil {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profil h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#profil h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#profil ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#profil ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#profil a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#profil a:hover {
+    text-decoration: underline;
+}
+
+#profil ul li, #profil p {
+    margin-left: 20px;
+}
+
+#profil p a {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+#profil p a:last-child {
+    color: #e74c3c;
+}
+
+#profil p a:last-child:hover {
+    color: #c0392b;
+}
+
+/* Section Parcours */
+#parcours {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#parcours h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+#parcours h3 {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#parcours ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#parcours ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#parcours a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#parcours a:hover {
+    text-decoration: underline;
+}
+
+#parcours ul li strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#parcours ul li a {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+#parcours p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#parcours ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#parcours ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    top: 0;
+}
+
+/* Section Stages */
+#stages {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stages h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+#stages p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+#stages ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#stages ul li {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#stages ul li:before {
+    content: "•";
+    color: #1abc9c;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    top: 0;
+}
+
+#stages ul li a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#stages ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Centres d'intérêt */
+#centres-interet {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#centres-interet h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+#centres-interet ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#centres-interet ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#centres-interet ul li:before {
+    content: "•";
+    color: #1abc9c;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    top: 0;
+}
+
+#centres-interet ul li strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Section Compétences */
+#competences {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#competences h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+#competences p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+#competences h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+#competences ul {
+    list-style: none;
+    padding: 0;
+}
+
+#competences ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#competences ul li:before {
+    content: "•";
+    color: #1abc9c;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    top: 0;
+}
+
+#competences a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#competences a:hover {
+    text-decoration: underline;
+}
+
+/* Section Projets */
+#projets {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projets h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+#projets p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.projets-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.projet {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.projet h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.projet p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.projet a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.projet a:hover {
+    text-decoration: underline;
+}
+
+/* Section BTS SIO */
+#bts-sio {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bts-sio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+#bts-sio p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.option {
+    margin-bottom: 30px;
+}
+
+.option h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.option img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.option p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.option h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.option ul {
+    list-style: none;
+    padding: 0;
+}
+
+.option ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.option ul li:before {
+    content: "•";
+    color: #1abc9c;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    top: 0;
+}
+
+/* Section Contact */
+#contact {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+#contact p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Formulaire de Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+    color: #34495e;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #34495e;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #16a085;
+}

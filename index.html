@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexande GUIBLAIN - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <aside class="sidebar">
+        <div class="profile">
+            <h1>Alexandre GUIBLAIN</h1>
+            <p>Étudiant en BTS SIO - Option SISR</p>
+        </div>
+         
+         <div class="current-time"> 
+            <p id="time-display">--:--:--</p>
+            <p id="date-display">-- -- ----</p>
+        </div>
+        <nav class="menu">
+            <a href="#accueil" class="menu-link">Accueil</a>
+            <a href="#profil" class="menu-link">Profil</a>
+            <a href="#parcours" class="menu-link">Parcours</a>
+            <a href="#stages" class="menu-link">Stages</a>
+            <a href="#competences" class="menu-link">Compétences</a>
+            <a href="#projets" class="menu-link">Projets</a>
+            <a href="#bts-sio" class="menu-link">BTS SIO </a>
+            <a href="#contact" class="menu-link">Contact</a>
+        </nav>
+        <footer>
+            <p>&copy; 2024 Designed by Alexandre GUIBLAIN</p>
+        </footer>
+    </aside>
+
+
+<script>
+    function updateTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        document.getElementById('time-display').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+    setInterval(updateTime, 1000); 
+    updateTime(); 
+
+    function updateDateTime() {
+            const now = new Date();
+            
+        
+            const days = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+            const months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+            const dayName = days[now.getDay()];
+            const day = now.getDate().toString().padStart(2, '0');
+            const monthName = months[now.getMonth()];
+            const year = now.getFullYear();
+            const fullDate = `${dayName} ${day} ${monthName} ${year}`;
+            
+          
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const fullTime = `${hours}:${minutes}:${seconds}`;
+            
+            
+            document.getElementById('date-display').textContent = fullDate;
+            document.getElementById('time-display').textContent = fullTime;
+        }
+        setInterval(updateDateTime, 1000); 
+        updateDateTime(); 
+</script>
+
+
+    <main class="content">
+       
+        <section id="accueil" class="welcome">
+            <h2>Voici mon portfolio, je vous invite à le découvrir.</h2>
+            <p>Explorez mes travaux, savoir-faire et expériences professionnelles.</p>
+        </section>
+
+        
+        <section id="profil">
+            <h2>En savoir plus sur moi 💭</h2>
+            <p>
+                Je suis étudiant depuis 2 ans à l'ORT Daniel Mayer à Montreuil (93) en deuxième année de BTS SIO (Services Informatiques aux Organisations), spécialité SISR (Solutions d'Infrastructure, Systèmes et Réseaux).
+                J’ai toujours eu une appétence pour l’informatique et une curiosité pour les nouvelles technologies. C’est tout naturellement que je me suis tourné vers cette formation, après avoir obtenu mon BAC Général ES - Mention Assez Bien en 2022.
+            </p>
+
+            <h3>- Étudiant en BTS SIO (2024 - 2024) 🤵</h3>
+            <p>
+                Étudiant de 1ᵉ année en BTS SIO - option ? à l'institution SAINT-ASPAIS à Melun.
+            </p>
+            <ul>
+                <li><strong>École :</strong> Institution SAINT-ASPAIS - Melun (77)</li>
+                <li><strong>Diplôme :</strong> aucun </li>
+                <li><strong>Téléphone :</strong> 06 61 48 09 87 </li>
+                <li><strong>Email :</strong> alexandre.guiblain2@gmail.com</li>
+            </ul>
+
+            <h3>- Projet professionnel 🏢</h3>
+            <p>
+                Professionnellement, je souhaite m’orienter vers le métier « d'Expert Réseau Infrastructures et Sécurité ».
+                Après l’obtention de mon BTS SIO - BAC+2, je souhaiterais poursuivre mon cursus en suivant la formation BACHELOR CSI - BAC+3, puis par la suite mon objectif est de continuer vers le diplôme d'EXPERT RÉSEAUX INFRASTRUCTURES ET SÉCURITÉ (ERIS) - BAC+5.
+                L'ensemble de cette formation est dispensé à l'école ORT Daniel Mayer à Montreuil.
+            </p>
+
+            <p>
+                Après mon BTS, j'envisage de poursuivre en alternance, ce qui me permettra 
+            </p>
+            <ul>
+                <li>D'acquérir une véritable expérience professionnelle et de tester mes acquis théoriques dans un contexte réel.</li>
+                <li>Contribuer à la conception et au développement de projets innovants et à l'optimisation de la performance, notamment en tant que Développeur informatique et Développeur d’applications, en assurant la mise en œuvre et la gestion des solutions logicielles.</li>
+                <li> </li>
+            </ul>
+            <p>
+                Je mettrai mes compétences, mon engagement et ma motivation au service de l'entreprise.
+            </p>
+
+            <p>
+                <a href="CV_link_here">Consulter CV</a> | <a href="CV_download_link_here" download>Télécharger CV</a>
+            </p>
+        </section>
+
+        
+        <section id="parcours">
+            <h2>Mon Parcours 🎓</h2>
+            <p>Mon cursus scolaire, mes différentes formations et mon parcours professionnel.</p>
+    
+            <h3>Cursus scolaire 🏫</h3>
+            <ul>
+                <li><strong>BTS SIO</strong> (2022 - A ce jour) - Option SISR<br><small>École : ORT Daniel Mayer (93 - Montreuil)</small></li>
+                <li><strong>LYCÉE GENERAL</strong> (2019 - 2022) - Bac Général ES - Option Maths/Eco - Mention Assez Bien<br><small>École : Lycée Alliance (93 - Pavillons-sous-Bois)</small></li>
+                <li><strong>COLLÈGE</strong> (2016 - 2019) - Collège de Lattre (94 - Le Perreux-sur-Marne)</li>
+            </ul>
+
+            <h3>Centres d'intérêt 🏃‍♂️</h3>
+            <ul>
+                <li><strong>Basket</strong> (2017 - maintenant): La pratique de sport collectif me permet d'avoir un esprit d'équipe.</li>
+                <li><strong>Voyage</strong>: La découverte de nouvelles cultures et modes de vie ouvre sur le monde et les environnements. Cela permet de sortir de sa zone de confort et d'explorer de nouvelles technologies.</li>
+                <li><strong>Musique</strong>: J'écoute de la musique quotidiennement.</li>
+                <li><strong>Regarder des films et séries en VO</strong> (2017 - maintenant): Cela me permet d'améliorer mes compétences linguistiques, notamment en anglais.</li>
+            </ul>
+        </section>
+
+        <section id="stages">
+            <h3>Stages 🎓</h3>
+            <p>Les 3 stages qui on eu lieu </p>
+            <ul>
+                <li>
+                    <strong>Stage AKTO</strong> (2024 - 8 semaines)<br>
+                    Stage BTS SIO de 2ᵉ année.<br>
+                    <small>Stage suivi dans l'entreprise FOLIATEAM au sein du service SU Réseau et Sécurité & SI interne, du service RUN et pôle LAN, Sécurité.</small><br>
+                    <a href="https://www.foliateam.com" target="_blank">www.foliateam.com</a><br>
+                    <small>FOLIATEAM - Siège: 82 Rue Garibaldi, 94100 Saint-Maur-des-Fossés</small><br>
+                    <small>FOLIATEAM - Paris Datacenter: 5-9 Rue Mousset-Robert, 75012 Paris</small>
+                </li>
+                <li>
+                    <strong>Stage RTE (Réseau de Transport d'Electricité)</strong> (2023 - 8 semaines)<br>
+                    Stage BAC PRO SN Priemière<br>
+                    <small>Stage suivi dans l'entreprise FOLIATEAM au sein du service SU Réseau et Sécurité & SI interne, du service RUN et pôle LAN, Sécurité.</small><br>
+                    <a href="https://www.rte-france.com/" target="_blank">www.rte-france.com</a><br>
+                    <small>FOLIATEAM - Siège: 82 Rue Garibaldi, 94100 Saint-Maur-des-Fossés</small><br>
+                </li>
+                <li>
+                    <strong>Stage FREE</strong> (2022 - 6 semaine)<br>
+                    Stage d'observation 3ᵉ (Service Informatique GENERALI ASSURANCES)<br>
+                    <small>11 Av. François Mitterrand, 93210 Saint-Denis</small><br>
+                    <a href="https://www.generali.fr" target="_blank">www.generali.fr</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="competences">
+            <h3>Mes compétences 🔧</h3>
+            <p>Au fil de mon parcours, j'ai eu l'opportunité d'acquérir plusieurs diplômes et certifications, que vous pourrez découvrir ci-dessous. Les formations que j'ai suivies m'ont permis de développer des compétences solides en informatique.
+            En complément, grâce à mon initiative personnelle, j'ai également obtenu des certifications supplémentaires. Ces démarches m'ont aidé à approfondir mes connaissances et à élargir mon champ de compétences.</p>
+    
+            <h4>Diplômes et Certifications 📜</h4>
+            <p>Voici la liste de mes diplômes et certifications obtenus.</p>
+
+            <ul>
+                <li>
+                    <strong>Introduction à la Cybersécurité</strong>
+                    <br>
+                    <a href="lien_vers_pdf" target="_blank">Détails - Ouvrir en PDF</a>
+                </li>
+                <li>
+                    <strong>MOOC ANSSI</strong>
+                    <br>
+                    <a href="lien_vers_pdf" target="_blank">Détails - Ouvrir en PDF</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projets">
+            <h2>Mes Projets 💻</h2>
+            <p>Découvrez ici l'ensemble des projets que j'ai réalisés tout au long de ma formation. Cliquez sur le projet de votre choix pour en savoir davantage !</p>
+            
+            <div class="projets-list">
+                <div class="projet">
+                    <h3>Koop fourchette</h3>
+                    <p>Site Internet</p>
+                    <a href="#" class="details">Détails</a>
+                    <a href="#" class="en-savoir-plus">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="bts-sio">
+            <h2>Qu'est-ce que le BTS SIO ? 🎓</h2>
+            
+            <p>Le Brevet de Technicien Supérieur Services Informatiques aux Organisations (BTS SIO) est une formation en deux ans destinée à celles et ceux qui souhaitent se spécialiser dans les métiers de l'informatique, que ce soit pour entrer directement sur le marché du travail ou poursuivre leurs études dans ce domaine.</p>
+            
+            <p>Cette formation propose deux spécialisations, adaptées aux différents aspects des technologies de l'information :</p>
+            
+            
+            <div class="option">
+                <h3>Option SISR : Solutions d’Infrastructure, Systèmes et Réseaux</h3>
+                <p>Cette spécialisation s’adresse aux étudiants qui souhaitent se concentrer sur la conception, l’installation, et la gestion d’infrastructures réseau. Les diplômés seront responsables de la sécurité, de la maintenance et du bon fonctionnement des réseaux ainsi que des équipements informatiques.</p>
+                
+                <h4>Débouchés professionnels :</h4>
+                <ul>
+                    <li>Administrateur systèmes et réseaux</li>
+                    <li>Informaticien support et déploiement</li>
+                    <li>Pilote d’exploitation</li>
+                    <li>Support systèmes et réseaux</li>
+                    <li>Technicien d’infrastructure</li>
+                    <li>Technicien de production</li>
+                    <li>Technicien systèmes et réseaux</li>
+                    <li>Technicien réseau et télécoms</li>
+                </ul>
+            </div>
+      
+            
+            <div class="option">
+                <h3>Option SLAM : Solutions Logicielles et Applications Métiers</h3>
+                <p>Cette spécialisation est idéale pour les étudiants intéressés par le développement de logiciels et la gestion d’applications métiers. Les diplômés pourront concevoir, maintenir et améliorer des applications tout en assurant l’intégration, la sécurisation et la configuration des systèmes.</p>
+        
+                <h4>Débouchés professionnels :</h4>
+                <ul>
+                    <li>Analyste d’applications ou d’études</li>
+                    <li>Analyste programmeur</li>
+                    <li>Chargé d'études informatiques</li>
+                    <li>Développeur d’applications informatiques</li>
+                    <li>Développeur informatique</li>
+                    <li>Informaticien d’études</li>
+                    <li>Programmeur analyste</li>
+                    <li>Programmeur d’applications</li>
+                    <li>Responsable des services applicatifs</li>
+                    <li>Technicien d’études informatiques</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>N'hésitez pas à me joindre pour toute question ou demande d'information supplémentaire en utilisant ce formulaire.</p>
+        
+            <div class="contact-info">
+                <p><strong>Localisation :</strong> 77 - Savigny le Temple, France</p>
+                <p><strong>Email :</strong> <a href="mailto:alexandre.guiblain2@gmail.com">alexandre.guiblain2@gmail.com</a></p>
+                <p><strong>Téléphone :</strong> <a href="tel:+33661480987">06 61 48 09 87</a></p>
+            </div>
+        
+            <h3>Formulaire de Contact</h3>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
