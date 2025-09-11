@@ -462,78 +462,100 @@ footer {
     text-decoration: underline;
 }
 
-/* Section BTS SIO */
-#bts-sio {
-    background-color: #ffffff;
+/* Carte centrale */
+.card {
+    max-width: 1000px;
+    margin: 40px auto;
     padding: 40px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
 }
 
-#bts-sio h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #34495e;
-}
-
-#bts-sio p {
-    font-size: 16px;
-    color: #7f8c8d;
-    margin-bottom: 20px;
-}
-
-.option {
+/* Intro */
+#bts-sio {
     margin-bottom: 30px;
 }
 
+#bts-sio h2 {
+    font-size: 2em;
+    color: #1a2a3a;
+    margin-bottom: 15px;
+}
+
+#bts-sio p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Colonnes */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.option {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
 .option h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #2c3e50;
-}
-
-.option img {
-    width: 150px;
-    height: 150px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.option p {
-    font-size: 16px;
-    color: #7f8c8d;
-    margin-bottom: 20px;
+    color: #1a2a3a;
+    margin-bottom: 15px;
 }
 
 .option h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #3498db;
+    margin-top: 20px;
+    color: #0a5c9c;
 }
 
 .option ul {
-    list-style: none;
-    padding: 0;
-}
-
-.option ul li {
-    font-size: 16px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     padding-left: 20px;
-    position: relative;
 }
 
-.option ul li:before {
-    content: "•";
-    color: #1abc9c;
-    position: absolute;
-    left: 0;
-    font-size: 20px;
-    top: 0;
+/* Couleurs distinctes */
+.sisr {
+    border-left: 5px solid #0077cc;
+}
+
+.slam {
+    border-left: 5px solid #28a745;
+}
+
+/* Référentiel */
+#referentiel {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eef6ff;
+    border: 1px solid #ccc;
+}
+
+#referentiel h3 {
+    margin-bottom: 15px;
+    color: #1a2a3a;
+}
+
+#referentiel p, 
+#referentiel ul {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }
 
 /* Section Contact */
@@ -613,3 +635,4 @@ form button {
 form button:hover {
     background-color: #16a085;
 }
+
