@@ -473,9 +473,10 @@ footer {
     font-family: Arial, sans-serif;
 }
 
-/* Intro */
+/* Section BTS SIO */
 #bts-sio {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 #bts-sio h2 {
@@ -488,26 +489,34 @@ footer {
     font-size: 1.05em;
     line-height: 1.6;
     color: #444;
+    max-width: 800px;
+    margin: 0 auto 10px auto;
 }
 
-/* Colonnes */
+/* Options SISR et SLAM */
 .container {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 30px 0;
 }
 
 .option {
-    flex: 1;
+    flex: 1 1 300px;
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 .option h3 {
-    color: #1a2a3a;
     margin-bottom: 15px;
 }
 
@@ -521,7 +530,7 @@ footer {
     padding-left: 20px;
 }
 
-/* Couleurs distinctes */
+/* Couleurs distinctes SISR et SLAM */
 .sisr {
     border-left: 5px solid #0077cc;
 }
@@ -544,20 +553,30 @@ footer {
     color: #1a2a3a;
 }
 
-#referentiel p, 
+#referentiel p,
 #referentiel ul {
     font-size: 1em;
     color: #444;
     line-height: 1.6;
 }
 
+/* Liens */
+#referentiel a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+#referentiel a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        align-items: center;
     }
 }
-
 /* Section Contact */
 #contact {
     background-color: #ffffff;
@@ -635,4 +654,5 @@ form button {
 form button:hover {
     background-color: #16a085;
 }
+
 
