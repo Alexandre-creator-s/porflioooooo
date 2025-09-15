@@ -36,4 +36,28 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
+
+});
+
+
+
+// Carrousel infini + autoplay
+document.querySelectorAll(".carousel").forEach(carousel => {
+  const track = carousel.querySelector(".carousel-track");
+  const prev = carousel.querySelector(".prev");
+  const next = carousel.querySelector(".next");
+
+  function nextSlide() {
+    track.appendChild(track.firstElementChild);
+  }
+
+  function prevSlide() {
+    track.prepend(track.lastElementChild);
+  }
+
+  next.addEventListener("click", nextSlide);
+  prev.addEventListener("click", prevSlide);
+
+  // autoplay toutes les 3 secondes
+  setInterval(nextSlide, 3000);
 });
