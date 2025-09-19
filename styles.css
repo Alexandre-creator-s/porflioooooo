@@ -404,7 +404,7 @@ footer {
 /* suite de la section competence : langage de programation et outil utilisé */
 
 #competences {
-  padding: 40px 10px;
+  padding: 20px 10px; /* moins d'espace autour */
   background: #fff;
   font-family: "Segoe UI", Arial, sans-serif;
   text-align: center;
@@ -413,31 +413,29 @@ footer {
 #competences h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 5px; /* réduit */
   color: #222;
 }
 
 #competences p {
-  margin-bottom: 25px;
+  margin-bottom: 15px; /* réduit */
   font-size: 0.9rem;
   color: #555;
   line-height: 1.4;
 }
 
-
 .carousel {
   position: relative;
   overflow: hidden;
-  max-width: 900px;
-  margin: 0 auto 40px auto;
+  max-width: 850px; /* réduit un peu la largeur max */
+  margin: 0 auto 20px auto; /* moins d'espace en bas */
 }
 
 .carousel-track {
   display: flex;
-  gap: 25px; 
+  gap: 15px; /* réduit l'espace entre les cartes */
   transition: transform 0.4s ease;
 }
-
 
 .card {
   flex: 0 0 18%;
@@ -453,7 +451,6 @@ footer {
   margin: 0;
 }
 
-
 .icon-circle {
   width: auto;
   height: auto;
@@ -462,29 +459,29 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8px;
+  margin-bottom: 5px; /* réduit l'espace sous le logo */
   transition: transform 0.3s;
 }
 
 .icon-circle:hover {
-  transform: scale(1.05); /* léger zoom au survol */
+  transform: scale(1.08); /* léger zoom */
 }
 
 .icon-circle img {
-  width: 40px;  /* taille contrôlée */
+  width: 55px;  /* logos plus gros */
   height: auto;
   object-fit: contain;
-  filter: grayscale(20%); /* effet plus clean */
+  filter: grayscale(20%);
   transition: filter 0.3s;
 }
 
 .icon-circle img:hover {
-  filter: grayscale(0); /* effet pro au survol */
+  filter: grayscale(0);
 }
 
 .card h3 {
   font-size: 0.85rem;
-  margin: 5px 0 3px;
+  margin: 3px 0; /* réduit encore l’espace */
   font-weight: 600;
   color: #111;
   transition: color 0.3s;
@@ -495,12 +492,11 @@ footer {
 }
 
 .card p {
-  font-size: 0.7rem;
+  font-size: 0.65rem; /* un peu plus petit */
   color: #666;
   margin: 0;
   line-height: 1.2;
 }
-
 
 .carousel button {
   position: absolute;
@@ -528,19 +524,17 @@ footer {
   right: 5px;
 }
 
-
 @media(max-width: 768px) {
   .card {
-    flex: 0 0 35%;
+    flex: 0 0 30%;
   }
 }
 
 @media(max-width: 480px) {
   .card {
-    flex: 0 0 70%;
+    flex: 0 0 60%;
   }
 }
-
 
 
 /* Section Projets */
@@ -849,6 +843,7 @@ footer {
     flex-direction: column;
   }
 }
+
 
 
 
