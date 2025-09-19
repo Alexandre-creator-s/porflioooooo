@@ -498,32 +498,6 @@ footer {
   line-height: 1.2;
 }
 
-.carousel button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #007BFF;
-  border: none;
-  font-size: 0.7rem;
-  cursor: pointer;
-  color: #fff;
-  padding: 4px 7px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.carousel button:hover {
-  background: #0056b3;
-}
-
-.carousel .prev {
-  left: 5px;
-}
-
-.carousel .next {
-  right: 5px;
-}
-
 @media(max-width: 768px) {
   .card {
     flex: 0 0 30%;
@@ -843,6 +817,7 @@ footer {
     flex-direction: column;
   }
 }
+
 
 
 
