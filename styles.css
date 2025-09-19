@@ -401,106 +401,101 @@ footer {
     text-decoration: underline;
 }
 
-/* Section */
+/* suite de la section competence : langage de programation et outil utilisé */
+
 #competences {
-  padding: 60px 20px;
-  background: #fff; /* fond propre et neutre */
+  padding: 40px 10px; 
+  background: #fff;
   font-family: "Segoe UI", Arial, sans-serif;
   text-align: center;
 }
 
 #competences h2 {
-  font-size: 2rem;
+  font-size: 1.5rem; 
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: #222;
 }
 
 #competences p {
-  margin-bottom: 45px;
-  font-size: 1rem;
+  margin-bottom: 25px;
+  font-size: 0.9rem; 
   color: #555;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
-/* Carousel */
 .carousel {
   position: relative;
   overflow: hidden;
-  max-width: 1100px;
-  margin: 0 auto 70px auto;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
 }
 
 .carousel-track {
   display: flex;
-  gap: 25px;
-  transition: transform 0.5s ease;
+  gap: 15px; 
+  transition: transform 0.4s ease;
 }
 
-/* Carte compétence */
+
+
 .card {
-  flex: 0 0 22%;
+  flex: 0 0 18%; 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-/* Cercle icône */
 .icon-circle {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #007BFF;
-  border-radius: 50%;
+  width: 60px;   
+  height: 60px;  
+  border: none;  
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent; /* plus clean, pas de fond blanc */
-  transition: 0.3s;
+  background: transparent;
+  transition: transform 0.3s;
 }
 
 .icon-circle:hover {
-  border-color: #0056b3;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .icon-circle img {
-  max-width: 65%;
-  max-height: 65%;
+  max-width: 70%;
+  max-height: 70%;
   object-fit: contain;
 }
-
-/* Texte */
 .card h3 {
-  font-size: 1rem;
-  margin: 14px 0 6px;
+  font-size: 0.8rem; 
+  margin: 8px 0 4px;
   font-weight: 600;
   color: #111;
   transition: color 0.3s;
 }
 
 .card h3:hover {
-  color: #007BFF; /* effet subtil au survol */
+  color: #007BFF;
 }
 
 .card p {
-  font-size: 0.85rem;
+  font-size: 0.7rem; 
   color: #666;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
-/* Flèches */
 .carousel button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: #007BFF;
   border: none;
-  font-size: 0.9rem;
+  font-size: 0.7rem; 
   cursor: pointer;
   color: #fff;
-  padding: 6px 10px;
+  padding: 4px 7px;
   border-radius: 50%;
   transition: 0.3s;
 }
@@ -517,18 +512,18 @@ footer {
   right: 5px;
 }
 
-/* Responsive */
 @media(max-width: 768px) {
   .card {
-    flex: 0 0 45%;
+    flex: 0 0 35%;
   }
 }
 
 @media(max-width: 480px) {
   .card {
-    flex: 0 0 80%;
+    flex: 0 0 70%;
   }
 }
+
 
 /* Section Projets */
 #projets {
@@ -836,6 +831,7 @@ footer {
     flex-direction: column;
   }
 }
+
 
 
 
